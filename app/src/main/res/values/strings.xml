@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Daniel.Borreguero</string>
+    <string name="Sday">Day</string>
+    <string name="Smonth">Month</string>
+    <string name="SYear">Year</string>
+    <string name="Schoose">CHOOSE</string>
+    <string name="Stoday">Today</string>
+    <string name="Stoast">toast</string>
+    <string name="Sjanuary">January</string>
+</resources>

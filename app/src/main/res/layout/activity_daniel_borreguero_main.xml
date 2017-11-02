@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.eseiaat.upc.pma.borreguero.daniel.danielborreguero.DanielBorregueroMainActivity">
+
+    <TextView
+        android:id="@+id/TVDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/Sday"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/TVMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TVDay"
+        android:layout_below="@+id/TVDay"
+        android:layout_marginTop="55dp"
+        android:text="@string/Smonth"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/TVYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TVMonth"
+        android:layout_below="@+id/TVMonth"
+        android:layout_marginTop="58dp"
+        android:text="@string/SYear"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/TVEMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TVMonth"
+        android:layout_alignBottom="@+id/TVMonth"
+        android:layout_toEndOf="@+id/BTToday"
+        android:text="@string/Sjanuary"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/BTChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TVEMonth"
+        android:layout_alignBottom="@+id/TVEMonth"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"
+        android:text="@string/Schoose" />
+
+    <EditText
+        android:id="@+id/ETDay"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TVDay"
+        android:layout_alignBottom="@+id/TVDay"
+        android:layout_alignStart="@+id/TVEMonth"
+        android:ems="10"
+        android:inputType="number"
+        android:text="12" />
+
+    <EditText
+        android:id="@+id/EDYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="2015"
+        android:layout_alignBaseline="@+id/TVYear"
+        android:layout_alignBottom="@+id/TVYear"
+        android:layout_alignStart="@+id/TVEMonth"
+        android:layout_alignEnd="@+id/BTmore" />
+
+    <Button
+        android:id="@+id/BTless"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="-"
+        android:layout_alignTop="@+id/ETDay"
+        android:layout_alignStart="@+id/BTChoose" />
+
+    <Button
+        android:id="@+id/BTmore"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:layout_alignBottom="@+id/BTless"
+        android:layout_toEndOf="@+id/BTless" />
+
+    <Button
+        android:id="@+id/BTToday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/TVYear"
+        android:layout_marginBottom="20dp"
+        android:text="@string/Stoday" />
+
+    <Button
+        android:id="@+id/BTToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BTToday"
+        android:layout_alignBottom="@+id/BTToday"
+        android:layout_alignEnd="@+id/BTmore"
+        android:text="@string/Stoast" />
+
+</RelativeLayout>
